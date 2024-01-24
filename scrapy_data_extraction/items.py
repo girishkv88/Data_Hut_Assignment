@@ -6,7 +6,19 @@
 import scrapy
 
 
-class ScrapyDataExtractionItem(scrapy.Item):
+class BayutPropertyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    property_id = scrapy.Field()
+    purpose = scrapy.Field()
+    type = scrapy.Field()
+    added_on = scrapy.Field()
+    furnishing = scrapy.Field()
+    price = scrapy.Field()
+    location = scrapy.Field()
+    bed_bath_size = scrapy.Field()
+    permit_number = scrapy.Field()
+    agent_name = scrapy.Field()
+    image_url = scrapy.Field()
+    breadcrumbs = scrapy.Field()
+    amenities = scrapy.Field()
